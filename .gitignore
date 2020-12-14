@@ -5,3 +5,4 @@ lib/
 coverage
 pages-build
 client-dist
+.idea

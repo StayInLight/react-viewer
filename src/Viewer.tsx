@@ -8,6 +8,10 @@ export default (props: ViewerProps) => {
   const [ container, setContainer ] = React.useState(props.container);
   const [ init, setInit ] = React.useState(false);
 
+  if (defaultContainer.current) {
+    defaultContainer.current.className = 'react-viewer-portal';
+  }
+
   React.useEffect(() => {
     document.body.appendChild(defaultContainer.current);
   }, []);
